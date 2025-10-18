@@ -1,0 +1,19 @@
+.home {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+        width: 300px;
+    }
+
+    h1 {
+        color: var(--main_color);
+        text-align: center;
+        line-height: 1.6;
+    }
+}

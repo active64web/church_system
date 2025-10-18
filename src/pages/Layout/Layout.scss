@@ -1,0 +1,18 @@
+.layout {
+    main {
+        height: 100vh;
+        display: flex;
+        align-items: stretch;
+
+        .page {
+            flex: 1;
+            overflow: hidden;
+
+            .outlet {
+                height: calc(100vh - 70px);
+                overflow: auto;
+                padding: 20px;
+            }
+        }
+    }
+}

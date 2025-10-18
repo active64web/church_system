@@ -1,0 +1,43 @@
+:root {
+    --main_color: #263879;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea {
+    font-family: "Tajawal", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main_color);
+}
+
+.title-page {
+    text-align: center;
+    color: var(--main_color);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    * {
+        cursor: none !important;
+    }
+}
