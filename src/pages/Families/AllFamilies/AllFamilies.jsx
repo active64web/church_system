@@ -1,7 +1,7 @@
 import "./AllFamilies.scss";
 import DataTable from "react-data-table-component";
 import { FaRegEye, FaRegTrashCan } from "react-icons/fa6";
-import { customStyles } from "../../../utils/Styles";
+import { customStyles } from "../../../utils/styles";
 import { TbTrash } from "react-icons/tb";
 import { FiEdit3 } from "react-icons/fi";
 import { IoSearchOutline } from "react-icons/io5";
