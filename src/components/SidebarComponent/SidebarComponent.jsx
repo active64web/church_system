@@ -59,18 +59,30 @@ const SidebarComponent = ({ openSideBar, setOpenSideBar }) => {
             permission: true,
             sub: [
                 { id: 1, title: "الاسر", icon: <FaLink />, path: "/families/all-families", permission: true },
-                { id: 2, title: "اضافة اسرة", icon: <FaLink />, path: "/families/add-families", permission: true },
+                { id: 2, title: "اضافة اسرة", icon: <FaLink />, path: "/families/add-familie", permission: true },
             ]
         },
         {
             id: 3,
             title: "قسم اخوة الرب",
             icon: <FaRegHeart />,
-            path: "/familys",
+            path: "/brothers-of-the-lord",
             permission: true,
             sub: [
-                { id: 1, title: "اخوة الرب", icon: <FaLink />, path: "/system/all-familys", permission: true },
-                { id: 2, title: "اضافة اسرة", icon: <FaLink />, path: "/system/add-family", permission: true },
+                {
+                    id: 1,
+                    title: "اخوة الرب",
+                    icon: <FaLink />,
+                    path: "/brothers-of-the-lord/all-brothers",
+                    permission: true
+                },
+                {
+                    id: 2,
+                    title: "اضافة اسرة",
+                    icon: <FaLink />,
+                    path: "/brothers-of-the-lord/add-brother",
+                    permission: true
+                },
             ]
         },
         {

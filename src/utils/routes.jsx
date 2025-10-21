@@ -7,6 +7,9 @@ import Page404 from "../pages/Page404/Page404";
 import Families from "../pages/Families/Families";
 import AllFamilies from "../pages/Families/AllFamilies/AllFamilies";
 import AddFamilies from "../pages/Families/AddFamilies/AddFamilies";
+import BrothersOfTheLord from "../pages/BrothersOfTheLord/BrothersOfTheLord";
+import AllBrothers from "../pages/BrothersOfTheLord/AllBrothers/AllBrothers";
+import AddBrother from "../pages/BrothersOfTheLord/AddBrother/AddBrother";
 
 const routes = createBrowserRouter([
     { path: "/login", element: <Login /> },
@@ -26,7 +29,15 @@ const routes = createBrowserRouter([
                 element: <Families />,
                 children: [
                     { path: "/families/all-families", element: <AllFamilies /> },
-                    { path: "/families/add-families", element: <AddFamilies /> }
+                    { path: "/families/add-familie", element: <AddFamilies /> }
+                ]
+            },
+            {
+                path: "/brothers-of-the-lord",
+                element: <BrothersOfTheLord />,
+                children: [
+                    { path: "/brothers-of-the-lord/all-brothers", element: <AllBrothers /> },
+                    { path: "/brothers-of-the-lord/add-brother", element: <AddBrother /> }
                 ]
             }
         ]

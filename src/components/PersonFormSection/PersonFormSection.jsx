@@ -1,3 +1,4 @@
+import "./PersonFormSection.scss";
 import { Field } from "formik";
 import Select from "react-select";
 import { FaPlus } from "react-icons/fa";

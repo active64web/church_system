@@ -1,12 +1,12 @@
-import "./AllFamilies.scss";
+import "./AllBrothers.scss";
 import DataTable from "react-data-table-component";
-import { FaRegEye, FaRegTrashCan } from "react-icons/fa6";
-import { customStyles } from "../../../utils/styles";
-import { TbTrash } from "react-icons/tb";
+import { FaRegEye } from "react-icons/fa6";
 import { FiEdit3 } from "react-icons/fi";
 import { IoSearchOutline } from "react-icons/io5";
+import { TbTrash } from "react-icons/tb";
+import { customStyles } from "../../../utils/styles";
 
-const AllFamilies = () => {
+const AllBrothers = () => {
     const data = [
         {
             id: 1,
@@ -67,8 +67,8 @@ const AllFamilies = () => {
     ];
 
     return (
-        <div className="all-families">
-            <h2 className="title-page">اسر الكنيسة</h2>
+        <div className="all-brothers">
+            <h2 className="title-page">اخوة الرب</h2>
 
             <div className="search">
                 <form>
@@ -98,4 +98,4 @@ const AllFamilies = () => {
     );
 }
 
-export default AllFamilies;
+export default AllBrothers;
