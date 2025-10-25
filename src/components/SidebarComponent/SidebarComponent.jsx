@@ -58,8 +58,8 @@ const SidebarComponent = ({ openSideBar, setOpenSideBar }) => {
             path: "/familys",
             permission: true,
             sub: [
-                { id: 1, title: "الاسر", icon: <FaLink />, path: "/families/all-families", permission: true },
                 { id: 2, title: "اضافة اسرة", icon: <FaLink />, path: "/families/add-familie", permission: true },
+                { id: 1, title: "الاسر", icon: <FaLink />, path: "/families/all-families", permission: true },
             ]
         },
         {
@@ -71,16 +71,16 @@ const SidebarComponent = ({ openSideBar, setOpenSideBar }) => {
             sub: [
                 {
                     id: 1,
-                    title: "اخوة الرب",
+                    title: "اضافة اسرة",
                     icon: <FaLink />,
-                    path: "/brothers-of-the-lord/all-brothers",
+                    path: "/brothers-of-the-lord/add-brother",
                     permission: true
                 },
                 {
                     id: 2,
-                    title: "اضافة اسرة",
+                    title: "اخوة الرب",
                     icon: <FaLink />,
-                    path: "/brothers-of-the-lord/add-brother",
+                    path: "/brothers-of-the-lord/all-brothers",
                     permission: true
                 },
             ]
@@ -92,12 +92,13 @@ const SidebarComponent = ({ openSideBar, setOpenSideBar }) => {
             path: "/settings",
             permission: true,
             sub: [
-                { id: 1, title: "الشوارع", icon: <FaLink />, path: "/1", permission: true },
-                { id: 2, title: "الحالات المادية", icon: <FaLink />, path: "/2", permission: true },
-                { id: 3, title: "المؤهلات الدراسية", icon: <FaLink />, path: "/3", permission: true },
-                { id: 4, title: "الحالات الصحية", icon: <FaLink />, path: "/4", permission: true },
-                { id: 5, title: "الحالات الاجتماعية", icon: <FaLink />, path: "/5", permission: true },
-                { id: 6, title: "الطوائف", icon: <FaLink />, path: "/6", permission: true },
+                { id: 1, title: "المناطق", icon: <FaLink />, path: "/additions/areas", permission: true },
+                { id: 2, title: "الشوارع", icon: <FaLink />, path: "/additions/streets", permission: true },
+                { id: 7, title: "الطوائف", icon: <FaLink />, path: "/additions/religious-sects", permission: true },
+                { id: 4, title: "المؤهلات الدراسية", icon: <FaLink />, path: "/additions/qualifications", permission: true },
+                { id: 3, title: "الحالات المادية", icon: <FaLink />, path: "/additions/financial-cases", permission: true },
+                { id: 5, title: "الحالات الصحية", icon: <FaLink />, path: "/additions/health-conditions", permission: true },
+                { id: 6, title: "الحالات الاجتماعية", icon: <FaLink />, path: "/additions/social-situations", permission: true },
             ]
         },
         {

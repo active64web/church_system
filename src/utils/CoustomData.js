@@ -1,3 +1,9 @@
+export const options = [
+    { value: '1', label: 'اختيار 1' },
+    { value: '2', label: 'اختيار 2' },
+    { value: '3', label: 'اختيار 3' }
+]
+
 export const options1 = [
     { value: '1', label: 'الترعة' },
     { value: '2', label: 'كرداسة' },

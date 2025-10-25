@@ -10,6 +10,14 @@ import AddFamilies from "../pages/Families/AddFamilies/AddFamilies";
 import BrothersOfTheLord from "../pages/BrothersOfTheLord/BrothersOfTheLord";
 import AllBrothers from "../pages/BrothersOfTheLord/AllBrothers/AllBrothers";
 import AddBrother from "../pages/BrothersOfTheLord/AddBrother/AddBrother";
+import Additions from "../pages/Additions/Additions";
+import Areas from "../pages/Additions/Areas/Areas";
+import Streets from "../pages/Additions/Streets/Streets";
+import ReligiousSects from "../pages/Additions/ReligiousSects/ReligiousSects";
+import Qualifications from "../pages/Additions/Qualifications/Qualifications";
+import FinancialCases from "../pages/Additions/FinancialCases/FinancialCases";
+import HealthConditions from "../pages/Additions/HealthConditions/HealthConditions";
+import SocialSituations from "../pages/Additions/SocialSituations/SocialSituations";
 
 const routes = createBrowserRouter([
     { path: "/login", element: <Login /> },
@@ -38,6 +46,19 @@ const routes = createBrowserRouter([
                 children: [
                     { path: "/brothers-of-the-lord/all-brothers", element: <AllBrothers /> },
                     { path: "/brothers-of-the-lord/add-brother", element: <AddBrother /> }
+                ]
+            },
+            {
+                path: "/additions",
+                element: <Additions />,
+                children: [
+                    { path: "/additions/areas", element: <Areas /> },
+                    { path: "/additions/streets", element: <Streets /> },
+                    { path: "/additions/religious-sects", element: <ReligiousSects /> },
+                    { path: "/additions/qualifications", element: <Qualifications /> },
+                    { path: "/additions/financial-cases", element: <FinancialCases /> },
+                    { path: "/additions/health-conditions", element: <HealthConditions /> },
+                    { path: "/additions/social-situations", element: <SocialSituations /> },
                 ]
             }
         ]

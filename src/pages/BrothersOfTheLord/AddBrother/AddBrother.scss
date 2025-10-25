@@ -1,1 +1,64 @@
-.add-brother {}
+.add-brother {
+    .form {
+        margin-top: 25px;
+        max-width: 600px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        >input {
+            height: 38px;
+            border-radius: 5px;
+            padding-inline: 10px;
+            border: 1px solid #CCC;
+            outline: none;
+            transition: all 0.3s;
+            font-size: 16px;
+
+            &:focus {
+                border-color: #2684FF;
+                box-shadow: 0 0 0px 1px #2684FF;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .total-price {
+        width: 100%;
+        margin-inline: auto;
+        margin-block: 30px;
+        font-size: 17px;
+        text-align: center;
+        background-color: var(--background_light);
+        color: #FFF;
+        padding-block: 10px;
+        border-radius: 10px;
+    }
+
+    .submit {
+        display: block;
+        margin-top: 20px;
+        margin-inline: auto;
+        background-color: var(--main_color);
+        border: none;
+        color: #FFF;
+        font-size: 17px;
+        padding: 8px 0;
+        width: 150px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

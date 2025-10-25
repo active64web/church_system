@@ -37,30 +37,5 @@
             color: var(--main_color);
             text-decoration: underline
         }
-
-        .control {
-            @extend %flex-center-center;
-            gap: 10px;
-
-            button {
-                @extend %flex-center-center;
-                border: none;
-                background-color: transparent;
-                font-size: 20px;
-                cursor: pointer;
-
-                &.show {
-                    color: #00b4ff;
-                }
-
-                &.edit {
-                    color: #ffc107;
-                }
-
-                &.del {
-                    color: #f44336;
-                }
-            }
-        }
     }
 }
