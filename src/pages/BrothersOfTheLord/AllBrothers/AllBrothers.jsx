@@ -49,6 +49,10 @@ const AllBrothers = () => {
             ),
         },
         {
+            name: 'اجمالى الدخل',
+            selector: () => "5000ج.م",
+        },
+        {
             name: 'تحكم',
             selector: () => (
                 <div className="control">

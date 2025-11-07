@@ -27,6 +27,10 @@ const ReligiousSects = () => {
             selector: row => row.name,
         },
         {
+            name: 'عدد الاشخاص',
+            selector: () => "20",
+        },
+        {
             name: 'تحكم',
             selector: () => (
                 <div className="control">

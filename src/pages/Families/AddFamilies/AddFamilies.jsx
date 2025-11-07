@@ -75,6 +75,16 @@ const AddFamilies = () => {
 
                             <div className="inputs">
                                 <div className="input-group">
+                                    <label>المنطقة</label>
+                                    <Select
+                                        isClearable
+                                        options={options1}
+                                        placeholder="اختر"
+                                        name="street"
+                                    />
+                                </div>
+
+                                <div className="input-group">
                                     <label>الشارع</label>
                                     <Select
                                         isClearable

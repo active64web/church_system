@@ -135,6 +135,11 @@ const PersonFormSection = ({
                 </div>
 
                 <div className="input-group">
+                    <label>يوم الاجازة</label>
+                    <Field type="text" name={`${title}.church`} placeholder="اليوم" />
+                </div>
+
+                <div className="input-group">
                     <label>المؤهل الدراسي</label>
                     <Select isClearable options={options5} placeholder="اختر" name={`${title}.education`} />
                 </div>

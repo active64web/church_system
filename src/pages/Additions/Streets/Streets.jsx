@@ -28,12 +28,12 @@ const Streets = () => {
             width: "70px"
         },
         {
-            name: 'اسم الشارع',
-            selector: row => row.name,
-        },
-        {
             name: 'اسم المنطقه',
             selector: row => row.area,
+        },
+        {
+            name: 'اسم الشارع',
+            selector: row => row.name,
         },
         {
             name: 'تحكم',
@@ -61,16 +61,16 @@ const Streets = () => {
                 <h3>اضافة جديد</h3>
                 <form>
                     <div className="form-group">
-                        <input type="text" placeholder="ادخل اسم الشارع" />
-                    </div>
-
-                    <div className="form-group">
                         <Select
                             isClearable
                             options={options}
                             placeholder="اختر المنطقة"
                             name="street"
                         />
+                    </div>
+
+                    <div className="form-group">
+                        <input type="text" placeholder="ادخل اسم الشارع" />
                     </div>
 
                     <button>اضافة</button>
