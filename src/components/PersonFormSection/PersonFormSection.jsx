@@ -5,6 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { options3, options4, options5, options6, options7, options8 } from "../../utils/CoustomData";
+import FileBox from "../FileBox/FileBox";
 
 const PersonFormSection = ({
     title,
@@ -46,46 +47,41 @@ const PersonFormSection = ({
                         </button>
                     )}
                 </>
-
             </h3>
 
-            <div className="main-image">
-                <h4>الصورة</h4>
-
-                <label htmlFor={`file-${title}`}>
-                    <input
-                        type="file"
-                        id={`file-${title}`}
-                        accept="image/*"
-                        style={{ display: "none" }}
-                        onChange={handleImageChange}
-                        disabled={disabled}
-                    />
-                    {image ? (
-                        <img
-                            src={image}
-                            alt="person"
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover",
-                                borderRadius: "8px",
-                            }}
+            <div className="files">
+                <div className="main-image">
+                    <label htmlFor={`file-${title}`}>
+                        <input
+                            type="file"
+                            id={`file-${title}`}
+                            accept="image/*"
+                            style={{ display: "none" }}
+                            onChange={handleImageChange}
+                            disabled={disabled}
                         />
-                    ) : (
-                        <span><FaPlus /></span>
-                    )}
-                </label>
+                        {image ? (
+                            <img
+                                src={image}
+                                alt="person"
+                            />
+                        ) : (
+                            <span><FaPlus /> الصورة الشخصية </span>
+                        )}
+                    </label>
 
-                {image && (
-                    <button
-                        type="button"
-                        onClick={handleRemoveImage}
-                        className="remove-image"
-                    >
-                        <IoClose />
-                    </button>
-                )}
+                    {image && (
+                        <button
+                            type="button"
+                            onClick={handleRemoveImage}
+                            className="remove-image"
+                        >
+                            <IoClose />
+                        </button>
+                    )}
+                </div>
+
+                <FileBox />
             </div>
 
             <div className="inputs">
